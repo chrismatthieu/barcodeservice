@@ -1,6 +1,6 @@
 ## Resources
 require 'rubygems'
-gem 'sinatra', '~> 1.0.0'
+gem 'sinatra' #, '~> 1.0.0'
 require 'sinatra'
 gem 'gbarcode'
 require 'gbarcode'
@@ -31,7 +31,7 @@ get '/' do
       Get a barcode image by crafting a url at this domain.
       <pre style='font-family: Iconsolata, monospace;background-color:#EEE'>&lt;img src="http://#{request.host}/12345632323.png" /&gt;</pre>
       <br />
-      <img src="http://#{request.host}/12345632323.png" />
+      <img src="/12345632323.png" />
     </body
 }
 end

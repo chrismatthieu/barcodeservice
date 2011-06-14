@@ -14,10 +14,13 @@ This is a simple Sinatra server that turns simple web requests into formatted ba
 
 You can embed barcodes into your web pages simply by using an <img> tag
 
+    <img src="http://my-barcode-server.heroku.com/ABCDEF1232333.png?type=39" />
     <img src="http://my-barcode-server.heroku.com/999999999999999.png?type=ISBN" />
-    <img src="http://my-barcode-server.heroku.com/ABCDEF1232333.png?type=code93" />
     <img src="http://my-barcode-server.heroku.com/ABC123.png?width=50&height=30&x=4&y=200&scale=1" />
 
+
+## Heroku Note
+heroku stack:migrate bamboo-ree-1.8.7
 
 Patches welcome, forks celebrated.
 
